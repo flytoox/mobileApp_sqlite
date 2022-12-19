@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DataBase Reader</string>
+    <string name="my_custom_button">My Custom button</string>
+</resources>
