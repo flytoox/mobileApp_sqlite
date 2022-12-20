@@ -34,6 +34,5 @@ public class MainActivity extends AppCompatActivity {
                 // code to go to another activity goes here
             }
         });
-
     }
 }
