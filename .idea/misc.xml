@@ -3,9 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/21261/Desktop/fiver/Apps/app_5/app/src/main/res/drawable/bg_cardview.xml" value="0.1" />
         <entry key="..\:/Users/21261/Desktop/fiver/Apps/app_5/app/src/main/res/drawable/custom_button.xml" value="0.1" />
-        <entry key="..\:/Users/21261/Desktop/fiver/Apps/app_5/app/src/main/res/layout/activity_button1.xml" value="0.4" />
+        <entry key="..\:/Users/21261/Desktop/fiver/Apps/app_5/app/src/main/res/layout/activity_b1_detail.xml" value="0.264" />
+        <entry key="..\:/Users/21261/Desktop/fiver/Apps/app_5/app/src/main/res/layout/activity_button1.xml" value="0.264" />
         <entry key="..\:/Users/21261/Desktop/fiver/Apps/app_5/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/21261/Desktop/fiver/Apps/app_5/app/src/main/res/layout/item_button1.xml" value="0.4523364485981308" />
+        <entry key="..\:/Users/21261/Desktop/fiver/Apps/app_5/app/src/main/res/layout/recycle_button1.xml" value="0.1" />
+        <entry key="..\:/Users/21261/Desktop/fiver/Apps/app_5/app/src/main/res/layout/sample_my_view.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/21261/Desktop/fiver/Apps/app_5/app/src/main/res/menu/search_bar.xml" value="0.2" />
       </map>
     </option>
   </component>

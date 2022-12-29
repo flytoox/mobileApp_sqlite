@@ -2,6 +2,7 @@ package com.database.reader;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -19,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // code to go to another activity goes here
+                startActivity(new Intent(MainActivity.this, Button1.class));
             }
         });
         button2.setOnClickListener(new View.OnClickListener() {
