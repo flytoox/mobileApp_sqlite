@@ -56,11 +56,6 @@ public class B1_detail extends AppCompatActivity {
         Situation = findViewById(R.id.SitutationD);
         Description = findViewById(R.id.DescriptionD);
         end_date = findViewById(R.id.end_dateD);
-        query = "SELECT tasks.id_task, tasks.id_emp, tasks.type_task, tasks.place, tasks.task, tasks.st, lev.level_rest," +
-                " lev.level_done, tasks.level, tasks.situtaion, tasks.description, tasks.end_date FROM tasks JOIN lev ON tasks.id_task " +
-                "= lev.id_task WHERE tasks.id_task='77654/01';";
-        c = myDbHelper.query(query);
-
         getIncomingIntent();
 
     }
