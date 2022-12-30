@@ -44,12 +44,8 @@ public class Button1 extends AppCompatActivity {
                 } catch (IOException ioe) {
                     throw new Error("Unable to create database");
                 }
-                try {
-                    myDbHelper.openDataBase();
-                } catch (SQLException sqle) {
-                    throw sqle;
-                }
-                query = "SELECT tasks.type_task, emp.name, tasks.id_task, emp.phone, tasks.task, " +
+        myDbHelper.openDataBase();
+        query = "SELECT tasks.type_task, emp.name, tasks.id_task, emp.phone, tasks.task, " +
                         "tasks.place, tasks.end_date FROM tasks JOIN emp ON tasks.id_emp " +
                         "= emp.id_emp;";
                 c = myDbHelper.query(query);
@@ -58,31 +54,27 @@ public class Button1 extends AppCompatActivity {
         mAdapter = new B1adapter(this, c);
         recyclerView.setAdapter(mAdapter);
         date_picker = findViewById(R.id.add_fab);
-        date_picker.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                final Calendar c = Calendar.getInstance();
+        date_picker.setOnClickListener(view -> {
+            final Calendar c = Calendar.getInstance();
 
 
-                int year = c.get(Calendar.YEAR);
-                int month = c.get(Calendar.MONTH);
-                int day = c.get(Calendar.DAY_OF_MONTH);
+            int year = c.get(Calendar.YEAR);
+            int month = c.get(Calendar.MONTH);
+            int day = c.get(Calendar.DAY_OF_MONTH);
 
 
-                DatePickerDialog datePickerDialog = new DatePickerDialog(
-                        Button1.this,
-                        new DatePickerDialog.OnDateSetListener() {
-                            @Override
-                            public void onDateSet(DatePicker view, int year,
-                                                  int monthOfYear, int dayOfMonth) {
-                                // on below line we are setting date to our text view.
-                               filter_date(year + "-" + (monthOfYear+1) + "-" + dayOfMonth);
-                            }
-                        },
+            DatePickerDialog datePickerDialog = new DatePickerDialog(
+                    Button1.this,
+                    (view1, year1, monthOfYear, dayOfMonth) -> {
+                        // on below line we are setting date to our text view.
+                        if (monthOfYear < 9)
+                            filter_date(year1 + "-0" + (monthOfYear+1) + "-" + dayOfMonth);
+                        else
+                            filter_date(year1 + "-" + (monthOfYear+1) + "-" + dayOfMonth);
+                    },
 
-                        year, month, day);
-                datePickerDialog.show();
-            }
+                    year, month, day);
+            datePickerDialog.show();
         });
     }
     @Override
@@ -112,7 +104,6 @@ public class Button1 extends AppCompatActivity {
 
 
     private void filter_date(String text) {
-
 
         query = "SELECT tasks.type_task, emp.name, tasks.id_task, emp.phone, tasks.task, " +
                 "tasks.place, tasks.end_date FROM tasks JOIN emp ON tasks.id_emp " +
