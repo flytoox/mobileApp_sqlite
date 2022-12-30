@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 
 import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,6 +20,14 @@ public class MainActivity extends AppCompatActivity {
         Button button1 = findViewById(R.id.Button1);
         Button button2 = findViewById(R.id.Button2);
         Button button3 = findViewById(R.id.Button3);
+
+
+        //this is for store the database file on a folder named "DataBase"
+        File directoryToStore;
+        directoryToStore = getBaseContext().getExternalFilesDir("DataBase");
+        if (!directoryToStore.exists()) {
+            if (directoryToStore.mkdir()) ;
+        }
 
         button1.setOnClickListener(new View.OnClickListener() {
             @Override

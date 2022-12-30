@@ -26,7 +26,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public DatabaseHelper(Context context, String path) {
         super(context, DB_NAME, null, 10);
         this.myContext = context;
-        this.DB_PATH = "/storage/emulated/0/Android/data/com.database.reader/files/";
+        this.DB_PATH = "/storage/emulated/0/Android/data/com.database.reader/files/DataBase/";
         Log.e("Path 1", DB_PATH);
     }
 
