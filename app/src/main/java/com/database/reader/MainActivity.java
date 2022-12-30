@@ -18,12 +18,7 @@ public class MainActivity extends AppCompatActivity {
         Button button1 = findViewById(R.id.Button1);
         Button button2 = findViewById(R.id.Button2);
         Button button3 = findViewById(R.id.Button3);
-        getApplicationContext().getFilesDir();
-        File directoryToStore;
-        directoryToStore = getBaseContext().getExternalFilesDir("DataBase");
-        if (!directoryToStore.exists()) {
-            if (directoryToStore.mkdir()) ;
-        }
+
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

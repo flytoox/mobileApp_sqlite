@@ -18,7 +18,7 @@ import java.io.OutputStream;
 public class DatabaseHelper extends SQLiteOpenHelper {
 
     String DB_PATH = null;
-    private static String DB_NAME = "test.db";
+    private static String DB_NAME = "test";
     private SQLiteDatabase myDataBase;
     private final Context myContext;
 
@@ -26,7 +26,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public DatabaseHelper(Context context, String path) {
         super(context, DB_NAME, null, 10);
         this.myContext = context;
-        this.DB_PATH = path + "/" +"DataBase/";
+        this.DB_PATH = "/storage/emulated/0/Android/data/com.database.reader/files/";
         Log.e("Path 1", DB_PATH);
     }
 
