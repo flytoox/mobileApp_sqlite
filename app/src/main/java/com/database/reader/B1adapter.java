@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -20,7 +21,6 @@ public class B1adapter extends RecyclerView.Adapter<B1adapter.B1ViewHolder> {
 
     private Context mContext;
     private Cursor mCursor;
-    private ArrayList<B1Model> B1ModelArrayList;
 
     public B1adapter(Context context, Cursor cursor) {
         mContext = context;
@@ -35,6 +35,7 @@ public class B1adapter extends RecyclerView.Adapter<B1adapter.B1ViewHolder> {
         private TextView Task;
         private TextView Place;
         private TextView end_date;
+
         public B1ViewHolder(@NonNull View itemView) {
             super(itemView);
             TypeTask = itemView.findViewById(R.id.TypeTask);
@@ -63,6 +64,7 @@ public class B1adapter extends RecyclerView.Adapter<B1adapter.B1ViewHolder> {
         if (!mCursor.moveToPosition(position)) {
             return;
         }
+        
          String TypeTask = mCursor.getString(0);
          String Name = mCursor.getString(1);
          String idTask = mCursor.getString(2);

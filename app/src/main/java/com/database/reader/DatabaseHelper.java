@@ -8,6 +8,7 @@ import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
+import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -21,10 +22,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private SQLiteDatabase myDataBase;
     private final Context myContext;
 
-    public DatabaseHelper(Context context) {
+
+    public DatabaseHelper(Context context, String path) {
         super(context, DB_NAME, null, 10);
         this.myContext = context;
-        this.DB_PATH = "/data/data/" + context.getPackageName() + "/" + "databases/";
+        this.DB_PATH = path + "/" +"DataBase/";
         Log.e("Path 1", DB_PATH);
     }
 

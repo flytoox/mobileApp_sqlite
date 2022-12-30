@@ -16,7 +16,7 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.51"
+        app:layout_constraintVertical_bias="0.26"
         tools:layout_editor_absoluteX="3dp">
 
         <TextView
@@ -41,49 +41,48 @@
             android:textSize="25dp" />
 
 
-            <TextView
-                android:id="@+id/TypeTaskD"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="3dp"
-                android:text="Task Type"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="25dp" />
+        <TextView
+            android:id="@+id/TypeTaskD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="Task Type"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
 
 
-            <TextView
-                android:id="@+id/PlaceD"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="3dp"
-                android:text="Place"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="25dp" />
+        <TextView
+            android:id="@+id/PlaceD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="Place"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
 
 
+        <TextView
+            android:id="@+id/TaskD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="Task"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
 
-            <TextView
-                android:id="@+id/TaskD"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="3dp"
-                android:text="Task"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="25dp" />
 
-
-            <TextView
-                android:id="@+id/stD"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="3dp"
-                android:text="St"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="25dp" />
+        <TextView
+            android:id="@+id/stD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="St"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -118,42 +117,26 @@
         </LinearLayout>
 
 
-            <TextView
-                android:id="@+id/levelD"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="3dp"
-                android:text="Level"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="25dp" />
+        <TextView
+            android:id="@+id/levelD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="Level"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
 
 
-            <TextView
-                android:id="@+id/SitutationD"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="3dp"
-                android:text="Situation"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="25dp" />
-
-
-
-
-
-            <TextView
-                android:id="@+id/DescriptionD"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="3dp"
-                android:text="Description"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="25dp" />
-
-
+        <TextView
+            android:id="@+id/SitutationD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="Situation"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
 
         <TextView
             android:id="@+id/end_dateD"
@@ -164,6 +147,18 @@
             android:text="End Date"
             android:textColor="@color/black"
             android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/DescriptionD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="Description"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+
 
 
     </LinearLayout>

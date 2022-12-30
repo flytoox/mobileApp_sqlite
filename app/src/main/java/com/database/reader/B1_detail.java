@@ -33,7 +33,8 @@ public class B1_detail extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_b1_detail);
-        myDbHelper= new DatabaseHelper(B1_detail.this);
+        getSupportActionBar().hide();
+        myDbHelper= new DatabaseHelper(B1_detail.this, getApplicationContext().getFilesDir().getPath());
         try {
             myDbHelper.createDataBase();
         } catch (IOException ioe) {
