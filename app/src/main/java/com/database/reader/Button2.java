@@ -54,8 +54,6 @@ public class Button2 extends AppCompatActivity {
                 "tasks.place, tasks.end_date FROM tasks JOIN emp ON tasks.id_emp " +
                 "= emp.id_emp WHERE DATE('now', 'localtime') BETWEEN tasks.start_date AND tasks.end_date AND (tasks.situtaion IS NULL OR tasks.situtaion='');";
         c = myDbHelper.query(query);
-        Toast.makeText(this, "test" + c.getCount(), Toast.LENGTH_SHORT).show();
-
         recyclerView = findViewById(R.id.recycleB1);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         mAdapter = new B1adapter(this, c);
